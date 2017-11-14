@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>ГУК «Централизованная библиотечная сеть Быховского района»</title>
+<link rel="icon" href="http://lib-bykhov.by/favicon.ico" type="image/x-icon" />
+<style type="text/css">
+body,p { font-family:verdana,arial,helvetica,sans-serif; }
+body{text-align:center;font-size:0.7em;background-color:#FFF;}
+</style>
+<SCRIPT LANGUAGE="JavaScript"><!--
+if (parent.frames.length >0) {
+   parent.window.location.href=this.window.location.href;
+}
+// -->
+</SCRIPT>
+</head>
+<body>
+<div style="font-size: 1.2em;">
+<center>
+<br /><br /><br />
+<div>
+<a href="http://lib-bykhov.by/"><img style="border-width: 0px;" title="ГУК «Централизованная библиотечная сеть Быховского района»" src="http://lib-bykhov.by/data/img/logo/logo-b.png" /></a></div>
+<br /><br /><br />
+
+
+<img alt=" " src="http://lib-bykhov.by/data/img/time.gif" />
+<br /><br />
+
+
+<br /><br />Через<span style="color: #AC3608; font-weight:bold; font-size: 2em; margin: 0 0.3em;" id="counter">5</span>секунд<br />произойдет автоматический переход<br /><br /><br /><br /><br /><br /><br />
+</center>
+</div>
+
+<script type="text/javascript">
+var changeCounter = function()
+{
+	if (document.getElementById('counter').innerHTML == 0)
+	{
+	window.location.replace('http://lib-bykhov.by/');
+	return;
+	}
+
+	document.getElementById('counter').innerHTML-=1;
+	setTimeout('changeCounter()', 1000);
+}
+setTimeout('changeCounter()', 1000);
+</script>
+
+
+
+</body>
+</html>
